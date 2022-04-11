@@ -48,8 +48,32 @@ do {
     # code...
     $points = (int) readline("Ingresa tus puntos de platzi: ");
     is_student_legend($points);
-} while (true);
+} while (false); //true , infinito
 
 
+
+//Parametros con valor por defecto 
+
+function suma($a = 0, $b = 0){
+    echo "La suma es: " . ($a + $b) . "\n";
+}
+
+suma(10);
+echo "\n";
+
+
+$array1 = [1,4];
+$array2 = [3,4,2];
+
+$result = [...$array1, ...$array2];
+
+print_r($result);
+
+function suma_array($a = 0, $b = 0){
+    echo "La suma es: " . ($a + $b) . "\n";
+}
+
+//Array unpacking
+suma_array(...$array1);
 
 
