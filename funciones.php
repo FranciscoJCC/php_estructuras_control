@@ -77,3 +77,17 @@ function suma_array($a = 0, $b = 0){
 suma_array(...$array1);
 
 
+//Parametros dinamicos
+function suma_dinamica(...$params){
+    $total = 0;
+    foreach ($params as $number) {
+        $total += $number;
+    }
+
+    echo "La suma de los números es: " . $total . "\n";
+}
+
+suma_dinamica(100,50,50,20,40,4);
+suma_dinamica(100,20,40,4);
+
+
